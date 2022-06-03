@@ -68,7 +68,19 @@ return require('packer').startup{function()
 			 requires = { 'kyazdani42/nvim-web-devicons', opt = true },
 			 config = [[ require('plugins/lualine') ]]
   }
-
+  use {
+      'kyazdani42/nvim-tree.lua',
+      requires = {
+        'kyazdani42/nvim-web-devicons', -- optional, for file icon
+      },
+      tag = 'nightly', -- optional, updated every week. (see issue #1193)
+      config = [[ require('plugins/tree') ]]
+  }
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = {'nvim-lua/plenary.nvim'},
+		config = [[ require('plugins/telescope') ]]
+  }
 end, config = {
   -- Move to lua dir so impatient.nvim can cache it
   compile_path = vim.fn.stdpath('config')..'/plugin/packer_compiled.lua'
