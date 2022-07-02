@@ -50,7 +50,7 @@ set.expandtab       = false         -- don't expand tabs into spaces
 set.shiftround      = true
 set.splitbelow      = true      -- open horizontal splits below current window
 set.splitright      = true      -- open vertical splits to the right of the current window
-set.laststatus      = 2         -- always show status line
+set.laststatus      = 3         -- global statusline
 --set.colorcolumn = "79"        -- vertical word limit line
 
 
