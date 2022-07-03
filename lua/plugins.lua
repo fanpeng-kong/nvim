@@ -85,6 +85,9 @@ return require('packer').startup{function()
     requires = {'nvim-lua/plenary.nvim'},
 		config = [[ require('plugins/telescope') ]]
   }
+	use { -- floating terminal window
+		'voldikss/vim-floaterm'
+	}
   use { -- git labels
     'lewis6991/gitsigns.nvim',
     requires = { 'nvim-lua/plenary.nvim' },
