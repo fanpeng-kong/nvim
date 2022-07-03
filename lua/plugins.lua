@@ -74,10 +74,23 @@ return require('packer').startup{function()
       tag = 'nightly', -- optional, updated every week. (see issue #1193)
       config = [[ require('plugins/tree') ]]
   }
+  use { -- Indent line
+		'lukas-reineke/indent-blankline.nvim'
+	}
+  use { -- Tag viewer
+		'preservim/tagbar'
+	}
   use {
     'nvim-telescope/telescope.nvim',
     requires = {'nvim-lua/plenary.nvim'},
 		config = [[ require('plugins/telescope') ]]
+  }
+  use { -- git labels
+    'lewis6991/gitsigns.nvim',
+    requires = { 'nvim-lua/plenary.nvim' },
+    config = function()
+      require('gitsigns').setup()
+    end
   }
 end, config = {
   -- Move to lua dir so impatient.nvim can cache it
