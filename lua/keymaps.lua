@@ -97,6 +97,9 @@ nnoremap("<leader>ff", "<Cmd>Telescope find_files<CR>")
 nnoremap("<leader>fb", "<Cmd>Telescope buffers<CR>")
 nnoremap("<leader>fg", "<Cmd>Telescope live_grep<CR>")
 
+-- Floatwindow
+nnoremap("<leader>ft", "<Cmd>FloatermToggle<CR>") -- Toggle Floaterm
+
 -- File explorer
 nnoremap("<leader>e", "<Cmd>NvimTreeToggle<CR>")  -- NvimTree
 -- nnoremap("<leader>e", "<Cmd>RnvimrToggle<CR>")
