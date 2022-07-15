@@ -95,6 +95,10 @@ return require('packer').startup{function()
       require('gitsigns').setup()
     end
   }
+	use { -- golang
+		'ray-x/go.nvim',
+		require('go').setup(),
+	}
 end, config = {
   -- Move to lua dir so impatient.nvim can cache it
   compile_path = vim.fn.stdpath('config')..'/plugin/packer_compiled.lua'
