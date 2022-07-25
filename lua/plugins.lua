@@ -66,6 +66,11 @@ return require('packer').startup{function()
 			 requires = { 'kyazdani42/nvim-web-devicons', opt = true },
 			 config = [[ require('plugins/lualine') ]]
   }
+-- 	use {
+-- 		'romgrk/barbar.nvim',
+-- 		requires = {'kyazdani42/nvim-web-devicons'},
+-- 		config = [[ require('plugins/barbar') ]],
+-- 	}
   use {
       'kyazdani42/nvim-tree.lua',
       requires = {

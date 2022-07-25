@@ -33,6 +33,8 @@ nnoremap("<C-l>", "<C-w>l")
 -- Switch buffers (needs nvim-bufferline)
 -- nnoremap("<TAB>", ":BufferLineCycleNext<CR>")
 -- nnoremap("<S-TAB>", ":BufferLineCyclePrev<CR>")
+nnoremap("<leader>bn", "<Cmd>BufferNext<CR>")
+nnoremap("<leader>bp", "<Cmd>BufferPrevious<CR>")
 
 -- Splits
 nnoremap("<leader>ws", ":split<CR>")
