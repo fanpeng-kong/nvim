@@ -19,8 +19,13 @@ return require('packer').startup{function()
           config = [[ require('plugins/lspconfig') ]]
   }
   use {
-          'williamboman/nvim-lsp-installer',
-          config = [[ require('plugins/lsp_installer_nvim') ]]
+          'williamboman/mason.nvim',
+          'williamboman/mason-lspconfig.nvim',
+					require("mason").setup(),
+					require("mason-lspconfig").setup({
+						ensure_installed = {"sumneko_lua", "rust_analyzer", "gopls", "pylsp", "jdtls", "clangd"},
+					}),
+          --config = [[ require('plugins/mason_nvim') ]]
   }
   use { -- vscode-like pictograms for neovim lsp completion items Topics
           'onsails/lspkind-nvim',
