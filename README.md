@@ -1,3 +1,5 @@
+My Neovim configuration built on top of a ["rock solid" basic stable Neovim IDE config](https://github.com/LunarVim/nvim-basic-ide).
+
 # A Basic Stable IDE config for Neovim
 
 > Why does this repo exist?
@@ -165,8 +167,7 @@ You can install new plugins here: [plugins](https://github.com/LunarVim/nvim-bas
 - [impatient.nvim](https://github.com/lewis6991/impatient.nvim)
 - [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [alpha-nvim](https://github.com/goolord/alpha-nvim)
-- [tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
-- [darkplus.nvim](https://github.com/LunarVim/darkplus.nvim)
+- [gruvbox.nvim](https://github.com/ellisonleao/gruvbox.nvim)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
 - [cmp-path](https://github.com/hrsh7th/cmp-path)
@@ -186,6 +187,7 @@ You can install new plugins here: [plugins](https://github.com/LunarVim/nvim-bas
 - [nvim-dap](https://github.com/mfussenegger/nvim-dap)
 - [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
 - [DAPInstall.nvim](https://github.com/ravenxrz/DAPInstall.nvim)
+- [trouble.nvim](https://github.com/folke/trouble.nvim)
 
 ---
 
