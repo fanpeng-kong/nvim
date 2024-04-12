@@ -34,3 +34,8 @@ map("n", "<leader>uc", function()
     vim.o.list = true
   end
 end, { desc = "toggle list" })
+
+map("n", "<leader>Cc", "<cmd>ChatGPT<cr>", { desc = "ChatGPT" })
+map("n", "<leader>Ca", "<cmd>ChatGPTActAs<cr>", { desc = "Act as" })
+map("v", "<leader>Ce", "<cmd>ChatGPTEditWithInstructions<cr>", { desc = "Edit with instructions" })
+map("n", "<leader>Cr", "<cmd>ChatGPTRun<cr>", { desc = "Run" })
