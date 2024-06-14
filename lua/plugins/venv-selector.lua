@@ -6,6 +6,8 @@ return {
     name = "venv",
     -- auto_refresh = false
     venvwrapper_path = "/home/fanpeng/VirtualEnvs",
+    anaconda_base_path = "/home/fanpeng/miniconda3",
+    anaconda_envs_path = "/home/fanpeng/miniconda3/envs",
   },
   event = "VeryLazy", -- Optional: needed only if you want to type `:VenvSelect` without a keymapping
   keys = {
