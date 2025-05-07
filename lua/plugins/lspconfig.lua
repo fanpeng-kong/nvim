@@ -1,13 +1,22 @@
 return {
   {
+    { "mason-org/mason.nvim", version = "1.11.0" },
+    { "mason-org/mason-lspconfig.nvim", version = "1.32.0" },
     "neovim/nvim-lspconfig",
-    ---@class PluginLspOpts
+
     opts = {
-      ---@type lspconfig.options
       servers = {
-        -- pyright will be automatically installed with mason and loaded with lspconfig
+        tsserver = {},
         pyright = {},
-        terraformls = {},
+        lua_ls = {
+          settings = {
+            Lua = {
+              diagnostics = {
+                globals = { "vim" },
+              },
+            },
+          },
+        },
       },
     },
   },
