@@ -3,6 +3,7 @@ return {
   opts = {
     spec = {
       { "<leader>C", group = "ChatGPT" },
+      { "<leader>a", group = "CodeCompanion" },
     },
   },
 }
