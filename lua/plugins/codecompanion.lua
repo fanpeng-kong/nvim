@@ -20,6 +20,15 @@ return {
     },
     enabled = true,
     opts = {
+      adapters = {
+        openai = function()
+          return require("codecompanion.adapters").extend("openai", {
+            env = {
+              api_key = "cmd:gpg --quiet --decrypt /home/fanpeng/nvim-openai-secret.txt.gpg",
+            },
+          })
+        end,
+      },
       display = {
         chat = {
           intro_message = "Welcome to CodeCompanion ✨! Press ? for options",
@@ -29,7 +38,7 @@ return {
       },
       strategies = {
         chat = {
-          adapter = "anthropic",
+          adapter = "openai",
           roles = {
             llm = "CodeCompanion",
             user = "Me",
@@ -56,7 +65,7 @@ return {
         },
       },
       inline = {
-        adapter = "anthropic",
+        adapter = "openai",
       },
     },
     keys = {
