@@ -4,6 +4,7 @@ return {
     spec = {
       { "<leader>C", group = "ChatGPT" },
       { "<leader>a", group = "CodeCompanion" },
+      { "<leader>v", group = "venv" },
     },
   },
 }

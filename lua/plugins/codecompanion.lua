@@ -1,3 +1,5 @@
+local utils = require("utils")
+
 ---@diagnostic disable-next-line: unused-local
 local function generate_slash_commands()
   local commands = {}
@@ -21,10 +23,10 @@ return {
     enabled = true,
     opts = {
       adapters = {
-        openai = function()
-          return require("codecompanion.adapters").extend("openai", {
+        anthropic = function()
+          return require("codecompanion.adapters").extend("anthropic", {
             env = {
-              api_key = "cmd:gpg --quiet --decrypt /home/fanpeng/nvim-openai-secret.txt.gpg",
+              api_key = utils.get_api_key("ANTHROPIC_API_KEY"),
             },
           })
         end,
@@ -38,7 +40,7 @@ return {
       },
       strategies = {
         chat = {
-          adapter = "openai",
+          adapter = "anthropic",
           roles = {
             llm = "CodeCompanion",
             user = "Me",
@@ -65,7 +67,7 @@ return {
         },
       },
       inline = {
-        adapter = "openai",
+        adapter = "anthropic",
       },
     },
     keys = {
